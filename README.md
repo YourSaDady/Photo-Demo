@@ -25,7 +25,7 @@ sudo apt install libgphoto2-6
 - pip
 
 ```sh
-sudo pip3 install gphoto2==0.8.0
+sudo pip3 install gphoto2
 ```
 
 [^1]: Tested cannot detect camera on Ubuntu 20.04.5 LTS guest on Microsoft WSL1 on Windows10 Pro 22H2 host. 
