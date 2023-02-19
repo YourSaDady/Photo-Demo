@@ -3,6 +3,7 @@ import gphoto2 as gp
 
 from initialize_camera import initialize_camera
 from capture import capture_preview, capture_jpeg, capture_raw, capture_jpeg_raw
+from save_image import save_image
 
 GP_ERROR = Enum("GP_ERROR", [])
 
@@ -21,8 +22,4 @@ class cameraControl:
     def capture_raw(self): capture_raw(self)
     def capture_jpeg_raw(self): capture_jpeg_raw(self)
 
-
-    def save_image(self, fp):
-        file_jpeg = self.cam.file_get(
-            self._gp_file.folder, self.gp_file.name, self._gp_file.GP_FILE_TYPE_NORMAL)
-        pass
+    def save_image(self, fp): save_image(self, fp)

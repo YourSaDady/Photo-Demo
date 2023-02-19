@@ -1,2 +1,2 @@
 def initialize_camera(self):
-    self.cam.init()
+    self.camera.init()
